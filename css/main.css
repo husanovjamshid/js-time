@@ -1,0 +1,12 @@
+.card {
+    width: 100%;
+    min-width: 300px;
+    min-height: 220px;
+    max-height: 220px;
+    padding: 20px 60px 10px;
+    overflow: hidden;
+}
+
+.alert {
+    margin: 0 auto;
+}
