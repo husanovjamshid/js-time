@@ -14,14 +14,10 @@ var planeSpeed = 800;
 elForm.addEventListener('submit', (evt) => {
     evt.preventDefault();
 
-    
     if (elInput.value < 0 || isNaN(elInput.value)) {
         elWarning.classList.remove('d-none');
         return ;
     }
-    
-    
-    
 
     function calcTime(way) {
 
@@ -34,10 +30,8 @@ elForm.addEventListener('submit', (evt) => {
         elResult4.textContent = Math.floor(way / planeSpeed) + ' soat ' + Math.floor(((way / planeSpeed) - Math.floor(way / planeSpeed)) * 60) + ' minut';
 
         return elResult1, elResult2, elResult3, elResult4;
-        
     }
 
     calcTime(elInput.value.trim());
-    
 
 });
