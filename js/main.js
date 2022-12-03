@@ -33,7 +33,7 @@ elForm.addEventListener('submit', (evt) => {
 
         elResult4.textContent = Math.floor(way / planeSpeed) + ' soat ' + Math.floor(((way / planeSpeed) - Math.floor(way / planeSpeed)) * 60) + ' minut';
 
-        return;
+        return elResult1, elResult2, elResult3, elResult4;
         
     }
 
